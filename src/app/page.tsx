@@ -1,4 +1,4 @@
-import { Card } from "tailored-m3";
+import { Card, Tooltip } from "@mabooky/tailored-m3";
 import Image from "next/image";
 import ThemeSelector from "./ThemeSelector";
 
@@ -74,7 +74,7 @@ export default function HomePage() {
             이 공간은 제가 경험한 개발 여정과 지식을 나누는 곳입니다.<br/>
             <br/>
             이메일: mabookyggl@gmail.com<br/>
-            GitHub: mabooky(WF Gray Ice Tea)<br/>
+            GitHub: mabooky(WF Gray Ice Tea)
           </p>
         </section>
         <section className="mt-48">

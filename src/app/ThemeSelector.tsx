@@ -1,10 +1,18 @@
 'use client';
 
-import { IconButton } from "tailored-m3";
+import { IconButton } from "@mabooky/tailored-m3";
 import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 export default function ThemeSelector() {
     const theme = useTheme();
+    const [mounted, setMounted] = useState(false);
+    useEffect(() => {
+      setMounted(true);
+    }, []);
+
+    if (!mounted) return null;
+    
     return (
         <div className="flex justify-items-center gap-8 text-on-surface">
           <IconButton

@@ -6,9 +6,8 @@
 
 import type { Metadata } from "next";
 import "./globals.css";
-import { Providers } from "./providers";
 import { Song_Myung } from "next/font/google";
-import Head from "next/head";
+import { MaterialThemeProvider } from "@mabooky/tailored-m3";
 
 const songMyung = Song_Myung({
   weight: '400',
@@ -29,13 +28,10 @@ export default function RootLayout({
         lang="en" 
         suppressHydrationWarning 
         className={songMyung.variable}>
-        <Head>
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"></link>
-        </Head>
         <body className="flex flex-col">
-            <Providers>
+            <MaterialThemeProvider>
                 {children}
-            </Providers>
+            </MaterialThemeProvider>
         </body>
     </html>
   );

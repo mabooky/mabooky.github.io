@@ -1,6 +1,8 @@
 @import "tailwindcss"; /* TODO: https://github.com/tailwindlabs/tailwindcss/discussions/13188 */
-@import "tailored-m3/tailored-m3.css";
-@source "../../node_modules/tailored-m3";
+
+@import "@mabooky/tailored-m3/tailored-m3.css";
+@source "../../node_modules/@mabooky/tailored-m3";
+
 @import "./design-tokens.css";
 
 @font-face {
